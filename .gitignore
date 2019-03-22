@@ -3,3 +3,8 @@
 *~
 *.swp
 
+#
+# Our logs directory
+#
+logs/
+
