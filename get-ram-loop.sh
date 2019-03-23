@@ -39,8 +39,9 @@ do
 	sleep $INTERVAL
 
 	#
-	# TODO: Delete old logs here.
+	# Delete old logs
 	#
+	find logs/ -type f -mtime +7 -exec rm -f {} \;
 
 done
 
