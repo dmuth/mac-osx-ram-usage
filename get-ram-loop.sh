@@ -9,13 +9,13 @@ set -e
 #
 # How often are we taking readings?
 #
-INTERVAL=10
+INTERVAL=15
 
 #
 # How many times are we looping before checking the date?
 # This value * $INTERVAL will be how many seconds before checking the date.
 #
-LOOPS=360
+LOOPS=240
 
 #
 # Create our logs directory.
