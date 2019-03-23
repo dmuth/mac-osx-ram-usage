@@ -47,6 +47,13 @@ def getProcesses():
 		except psutil.ZombieProcess:
 			continue
 
+		except psutil.NoSuchProcess:
+			continue
+
+		except Exception as e:
+			print("Caught exception: {}".format(e))
+			continue
+
 		retval[pid] = {
 			"name": name,
 			"exe": exe,
