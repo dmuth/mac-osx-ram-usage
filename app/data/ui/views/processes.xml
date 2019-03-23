@@ -213,4 +213,22 @@
       </chart>
     </panel>
   </row>
+  <row>
+    <panel>
+      <title>Top RAM usage over the last minute</title>
+      <table>
+        <search>
+          <query>index=main earliest=-1m name="*$process$*" name != "*$process_filter$*" 
+   | eval rss_mb = round(rss_mb, 2) 
+   | chart max(rss_mb) AS RSS by name 
+   | sort -RSS 
+   | head $num_processes$</query>
+          <earliest>-1m</earliest>
+          <latest>now</latest>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
 </form>
