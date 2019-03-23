@@ -15,7 +15,7 @@ and tested on Mac OS/X 10.13.6.
 ## Installaton
 
 - Clone this repo
-- Run `pip3 -r ./requirements.txt` to install the necessary Python modules
+- Run `pip3 install -r ./requirements.txt` to install the necessary Python modules
 
 
 ## Usage
