@@ -34,19 +34,9 @@ do
 	echo "# Writing to ${LOG}..."
 	echo "# "
 
-	for I in $(seq 1 $LOOPS)
-	do
-		#
-		# The date is in the format recommended at 
-		# https://answers.splunk.com/answers/5357/what-is-the-best-timestamp-format-to-use-for-my-custom-log-to-be-indexed-by-splunk.html#answer-550100
-		#
+	./better-ps.py --loops ${LOOPS} --interval ${INTERVAL} >> $LOG
 
-		DATE=$(date +"%Y-%m-%dT%T.000%z")
-		ps aux |sort 2>&1 | sed -e s/^/"${DATE} "/ >> $LOG
-
-		sleep $INTERVAL
-
-	done
+	sleep $INTERVAL
 
 	#
 	# TODO: Delete old logs here.
