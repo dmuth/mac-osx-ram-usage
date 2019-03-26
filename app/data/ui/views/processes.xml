@@ -14,17 +14,16 @@
       <choice value="10">10</choice>
       <choice value="15">15</choice>
       <choice value="20">20</choice>
-      <default>10</default>
+      <default>5</default>
     </input>
     <input type="dropdown" token="span" searchWhenChanged="true">
       <label>Span</label>
-      <choice value="10s">10s</choice>
-      <choice value="15s">15s</choice>
+      <choice value="30s">30s</choice>
       <choice value="1m">1m</choice>
       <choice value="5m">5m</choice>
       <choice value="15m">15m</choice>
       <choice value="1h">1h</choice>
-      <default>15s</default>
+      <default>1m</default>
     </input>
     <input type="text" token="process" searchWhenChanged="true">
       <label>Process Search</label>
