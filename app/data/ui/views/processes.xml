@@ -38,6 +38,7 @@
     <panel>
       <title>RAM Usage (RSS)</title>
       <chart>
+        <title>This is current memory each process is using</title>
         <search>
           <query>index=main name="*$process$*" name != "*$process_filter$*" | timechart span=$span$ limit=$num_processes$ max(rss_mb) by name</query>
           <earliest>$field1.earliest$</earliest>
@@ -82,6 +83,7 @@
     <panel>
       <title>RAM Usage (VSZ)</title>
       <chart>
+        <title>This includes linked libraries, and can be absurdly high. DON'T PANIC.</title>
         <search>
           <query>index=main name="*$process$*" name != "*$process_filter$*" | timechart span=$span$ limit=$num_processes$ max(vsz_mb) by name</query>
           <earliest>$field1.earliest$</earliest>
