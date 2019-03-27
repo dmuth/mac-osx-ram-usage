@@ -35,6 +35,19 @@ Once started, the Splunk instance can be accessed at https://localhost:8000/, un
 you chose a different port.
 
 
+## How It Works
+
+I wrote a version of PS in Python called **Better PS**, and it uses the
+<a href="https://pypi.org/project/psutil/">PSUtil module</a> to query the process list
+and extract important process attributes and then print them up in a format that Splunk
+can parse natively.  This is far FAR saner than trying to parse the output of `ps`.
+
+
+## Why are you using SSL for talking to localhost?
+
+Why are you not?
+
+
 ## Credits
 
 - <a href="https://www.splunk.com/">Splunk</a>
