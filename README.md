@@ -9,8 +9,8 @@ and tested on Mac OS/X 10.13.6.
 ## Screenshots
 
 <a href="./img/ram.png" ><img src="./img/ram.png" alt="OS/X Ram Usage, top 5 processes" width="250" 
-	/></a><a href="./img/ram-evernote.png" ><img src="./img/ram-evernote.png" alt="Evernote RAM usage" width="250" 
-	/></a><a href="./img/ram-slack.png" ><img src="./img/ram-slack.png" alt="Slack client RAM usage" width="250" /></a>
+	/></a> <a href="./img/ram-evernote.png" ><img src="./img/ram-evernote.png" alt="Evernote RAM usage" width="250" 
+	/></a> <a href="./img/ram-slack.png" ><img src="./img/ram-slack.png" alt="Slack client RAM usage" width="250" /></a>
 
 
 ## Requirements
