@@ -10,7 +10,8 @@ set -e
 # How often are we taking readings?
 #
 #INTERVAL=15 # On my Mac, just produces over 500 Megs of logs per day and goes over Splunk's free license
-INTERVAL=30
+#INTERVAL=30
+INTERVAL=60
 
 #
 # How many times are we looping before checking the date?
