@@ -1,5 +1,7 @@
 <nav search_view="search" color="#5CC05C">
-  <view name="processes" default="true" />
+  <view name="ram_usage" default="true" />
+  <view name="paging_activity" default="true" />
+
   <view name="search" />
   <view name="dashboards" />
 </nav>
